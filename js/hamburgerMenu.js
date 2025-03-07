@@ -1,10 +1,11 @@
-Menu.style.display = "none";
-function ShowHide(x) {
-  x.classList.toggle("change");
-  var Menu = document.getElementById("Menu");
-  if (Menu.style.display === "none") {
-    Menu.style.display = "block";
-  } else {
-    Menu.style.display = "none";
+const button = document.querySelector("#hamburgerButton");
+const menu = document.querySelector("#mobileNav");
+menu.style.display = "none";
+
+button.addEventListener("click", ()=>{
+  if (menu.style.display == "none"){
+    menu.style.display = "flex";
+  } else{
+    menu.style.display = "none";
   }
-}
+})

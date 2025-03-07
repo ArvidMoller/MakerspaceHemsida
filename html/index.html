@@ -10,48 +10,61 @@
 
 <body>
     <header>
-        <div id="headerTitleLogo">
-            <a href="index.html">
-                <img src="../media/MSLogo.png" alt="Makerspace logotype" id="logo"></img>
-            </a>
-            <h1 id="headerTitle">Makerspace</h1>
-        </div>
+        <a href="index.html">
+            <img src="../media/MSLogo.png" alt="Makerspace logotype" id="logo"></img>
+        </a>
+        <h1 id="headerTitle">Makerspace</h1>
 
-        <nav>
-            <div id="desktopNav">
-                <a class="navLinks" href=".">Hem</a>
-                <a class="navLinks" href="../html/recept.html">MK4S</a>
-                <a class="navLinks" href="../html/restaurang.html">Laserskäraren</a>
-                <a class="navLinks" href="#footer">Vinylskäraren</a>
-                <a class="navLinks" href="#footer">Resinskrivarna</a>
-            </div>
-
-            <div id="mobileNav">
-                <!-- For mobile -->
-                <div class="hamburgerContainer" onclick="ShowHide(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                
-                <div id="Menu">
-                    <a class="navLinks" href=".">Hem</a>
-                    <a class="navLinks" href="../html/recept.html">MK4S</a>
-                    <a class="navLinks" href="../html/restaurang.html">Laserskäraren</a>
-                    <a class="navLinks" href="#footer">Vinylskäraren</a>
-                    <a class="navLinks" href="#footer">Resinskrivarna</a>
-                </div>
-            </div>
+        <nav id="desktopNav">
+            <a class="desktopNavLinks" href=".">Hem</a>
+            <a class="desktopNavLinks" href="../html/recept.html">MK4S</a>
+            <a class="desktopNavLinks" href="../html/restaurang.html">Laserskäraren</a>
+            <a class="desktopNavLinks" href="#footer">Vinylskäraren</a>
+            <a class="desktopNavLinks" href="#footer">Resinskrivarna</a>
         </nav>
+
+        <div id="hamburgerButton">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </header>
+
+    <nav id="mobileNav">
+        <!-- For mobile -->    
+        <a class="mobileNavLinks" href=".">Hem</a>
+        <a class="mobileNavLinks" href="../html/recept.html">MK4S</a>
+        <a class="mobileNavLinks" href="../html/restaurang.html">Laserskäraren</a>
+        <a class="mobileNavLinks" href="#footer">Vinylskäraren</a>
+        <a class="mobileNavLinks" href="#footer">Resinskrivarna</a>
+    
+        <script src="../js/hamburgerMenu.js"></script>
+    </nav>
 
     <main>
         <aside>
-            lsdbk
+            <h2>Vi i styrelsen</h2>
+            <section id="lucas">
+                <img id="lucasImg" src="../media/styrelsen/lucasBackdahl.png" alt="Lucas Bäckdahl">
+                <h3>Lucas Bäckdahl</h3>
+                <p>Lucas är våran ordförnade. Han går i klass TE22B och har varit medlem i styrelsen sedan 2023.</p>
+            </section>
+
+            <section id="arvid">
+                <img id="arvidImg" src="../media/styrelsen/arvidMoller.png" alt="Arvid Möller">
+                <h3>Arvid Möller</h3>
+                <p>Arvid är våran inköpsansvariga. Han går i klass TE23B och har varit medlem i styrelsen sedan 2024.</p>
+            </section>
+
+            <section id="teo">
+                <img id="teoImg" src="../media/styrelsen/teoLundgren.png" alt="Teo Lundgren">
+                <h3>Teo Lundgren</h3>
+                <p>Teo är styelseledarmot och går i klass EE22. Han har varit medlem i styrelsen sedan 2023.</p>
+            </section>
         </aside>
 
         <article>
-            klrgn
+            jkebg
         </article>
     </main>
 
