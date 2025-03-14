@@ -78,15 +78,49 @@
 
         display: grid;
         grid-template-columns: 30vw 70vw;
-        grid-template-rows: 85vh auto;
+        grid-template-rows: 85vh auto auto;
         grid-template-areas: 
         'hero_img hero_img'
-        'aside article'   
+        'aside aside'
+        'article article';   
     }
 
-    aside{
+    aside {
         grid-area: aside;
         background-color: blue;
+        text-align: center;
+    }
+
+    #cardHeader {
+        padding: 3vh;
+    }
+
+    #cardContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card {
+        background-color: white;
+        width: 30%;
+        height: 50vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 5vh;
+    }
+
+    .cardImg {
+        width: 100%;
+    }
+
+    .cardTitle {
+        text-align: center;
+    }
+
+    .cardText {
+        text-align: center;
+        padding: 1vh;
     }
 
     article{
@@ -178,21 +212,37 @@
     aside{
         grid-area: aside;
         background-color: blue;
+        text-align: center;
+    }
 
+    #cardHeader{
+        padding: 3vh;
+    }
+
+    #cardContainer{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    #lucasImg{
-        width: 30vw;
+    .card{
+        background-color: white;
+        width: 85%;
+        margin-bottom: 5vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    #arvidImg {
-        width: 30vw;
+    .cardImg{
+        width: 100%;
     }
 
-    #teoImg {
-        width: 30vw;
+    .cardTitle{
+        text-align: center;
+    }
+
+    .cardText{
+        text-align: center;
+        padding: 1vh;
     }
 
     article{
@@ -205,3 +255,4 @@
         background-color: chartreuse;
     }
 }
+
