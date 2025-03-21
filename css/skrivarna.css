@@ -90,7 +90,7 @@
         grid-area: hero_img;
         background-image: url(../media/hero/printer.jpg);
         background-size: cover;
-        background-position: -17rem;
+        background-position: center;
 
         align-items: center;
         justify-content: center;
@@ -113,7 +113,6 @@
         grid-template-areas:
         'aside'
         'div'
-        'printerArticle'
         'article';
     }
 
@@ -171,13 +170,22 @@
         background-image: linear-gradient(#4b0082, #f0f0f0);
     }
 
-    #printerArticle{
-        grid-area: printerArticle;
-    }
-
     article {
         grid-area: article;
         background-color: #f0f0f0;
+
+        display: grid;
+        grid-template-areas: 
+        'article1'
+        'article2';
+    }
+
+    #printerArticle{
+        grid-area: article1;
+    }
+
+    #article{
+        grid-area: article2;
     }
 
     #articleTitle {
@@ -285,7 +293,7 @@
         grid-area: hero_img;
         background-image: url(../media/hero/printer.jpg);
         background-size: 120%;
-        background-position: -19rem;
+        background-position: center;
 
         align-items: center;
         justify-content: center;
@@ -305,10 +313,8 @@
 
         display: grid;
         grid-template-columns: 25% 75%;
-        grid-template-rows: min-content auto;
         grid-template-areas:
-        'aside article'
-        'aside printerArticle';
+        'aside article';
     }
 
     aside {
@@ -373,7 +379,7 @@
     }
 
     #printerArticle{
-        grid-area: printerArticle;
+        grid-area: article;
         background-color: #f0f0f0;
     }
 

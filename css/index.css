@@ -90,7 +90,7 @@
         grid-area: hero_img;
         background-image: url(../media/hero/main_room.jpg);
         background-size: cover;
-        background-position: -17rem;
+        background-position: center;
 
         align-items: center;
         justify-content: center;
@@ -170,16 +170,30 @@
         background-color: #f0f0f0;        
     }
 
-    #articleTitle{
+    .articleTitle{
         text-align: center;
         font-size: 7vw;
         padding-bottom: 1vh;
+        color: #222222;
     }
 
-    #articleText{
+    .articleText{
         text-align: center;
         font-size: 4vw;
         padding: 1vh;
+        color: #222222;
+    }
+
+    .projektTitle {
+        text-align: center;
+        font-size: 6vw;
+        padding-bottom: 0.7vw;
+        color: #222222;
+    }
+
+    .exempelProjekt{
+        width: 80%;
+        padding: 3% 10% 5% 10%;
     }
 
     #articleFooterDiv{
@@ -275,7 +289,7 @@
         grid-area: hero_img;
         background-image: url(../media/hero/main_room.jpg);
         background-size:120%;
-        background-position: -10rem;
+        background-position: center;
 
         align-items: center;
         justify-content: center;
@@ -344,16 +358,46 @@
         background-color: #f0f0f0;
     }
 
-    #articleTitle {
+    .articleTitle {
         text-align: center;
         font-size: 3vw;
         padding: 3vh;
+        color: #222222;
     }
 
     #articleText {
         text-align: center;
         font-size: 2vw;
         padding: 1vh;
+        color: #222222;
+    }
+
+    #projektContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projektTitle {
+        text-align: center;
+        font-size: 3vw;
+        padding-bottom: 2vh;
+        color: #222222;
+    }
+
+    .projekt{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projektText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .exempelProjekt{
+        width: 60%;
+        padding: 3% 3% 5% 3%;
     }
 
     footer{
@@ -373,4 +417,3 @@
         padding: 1vh;
     }
 }
-
