@@ -16,10 +16,10 @@
         <h1 id="headerTitle" class="text">Makerspace</h1>
     
         <nav id="desktopNav">
-            <a class="desktopNavLinks" href=".">Hem</a>
-            <a class="desktopNavLinks" href="../html/skrivarna.html">Skrivarna</a>
+            <a class="desktopNavLinks" href="../html/index.html">Hem</a>
+            <a class="desktopNavLinks" href=".">Skrivarna</a>
             <a class="desktopNavLinks" href="../html/laser.html">Laserskäraren</a>
-            <a class="desktopNavLinks" href="#footer">Vinylskäraren</a>
+            <a class="desktopNavLinks" href="../html/vinyl.html">Vinylskäraren</a>
         </nav>
     
         <div id="hamburgerButton">
@@ -34,7 +34,7 @@
         <a class="mobileNavLinks" href=".">Hem</a>
         <a class="mobileNavLinks" href="../html/skrivarna.html">Skrivarna</a>
         <a class="mobileNavLinks" href="../html/laser.html">Laserskäraren</a>
-        <a class="mobileNavLinks" href="#footer">Vinylskäraren</a>
+        <a class="mobileNavLinks" href="../html/vinyl.html">Vinylskäraren</a>
     
         <script src="../js/hamburgerMenu.js"></script>
     </nav>
@@ -48,23 +48,23 @@
             <h2 id="cardHeader" class="text">Våra skrivare</h2>
             <h4 id="cardUnderrubrik">(Klicka på korten för mer information)</h4>
             <div id="cardContainer">
-                <section class="card" id="prusaCard">
+                <a class="card" id="prusaCard" href="#prusa">
                     <img class="cardImg" src="../media/skrivare/Prusa.jpg" alt="Prusa MK4S">
                     <h3 class="cardTitle">Prusa MK4S</h3>
                     <p class="cardText">Vi har 8 st Prusa MK4S skrivare. De är den perfekta skrivaren för alla vardagliga prints.</p>
-                </section>
+                </a>
         
-                <section class="card" id="bambuCard">
+                <a class="card" id="bambuCard" href="#bambu">
                     <img class="cardImg" src="..//media/skrivare/Bambu.jpg" alt="BambuLab X1C">
                     <h3 class="cardTitle">BambuLab X1C</h3>
                     <p class="cardText">BambuLab skrivaren är vår snabbaste skrivare och en skrivare som kan skriva i alla sorters plast.</p>
-                </section>
+                </a>
         
-                <section class="card" id="formlabsCard">
+                <a class="card" id="formlabsCard" href="#formlabs">
                     <img class="cardImg" src="../media/skrivare/Resin.jpg" alt="Formlabs Form 2">
                     <h3 class="cardTitle">Formlabs Form 2</h3>
                     <p class="cardText">Detta är vår enda resinskrivare och den kan därför skriva i betydligt finare detalj än våra andra skrivare.</p>
-                </section>
+                </a>
             </div>
         </aside>
         
@@ -72,8 +72,8 @@
 
         <article>
             <article id="article">
-                <h2 class="text" id="articleTitle">Detta är 3D printing</h2>
-                <p class="text" id="articleText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias error
+                <h2 class="articleTitle">Detta är 3D printing</h2>
+                <p class="articleText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias error
                     veritatis itaque, debitis quia, dolore, impedit iste eaque quibusdam aliquam saepe voluptatibus quam dolorum
                     perferendis qui molestiae. Corrupti dignissimos voluptas ratione fugiat dolorem ipsam adipisci facilis possimus
                     et? Adipisci excepturi neque expedita veniam omnis blanditiis sit alias cumque non, in, eveniet, a facilis
@@ -81,14 +81,30 @@
                     fugit explicabo, eius aut inventore? Rem reiciendis ut nemo modi in, cumque voluptatibus atque facere eum
                     architecto odit autem ad dignissimos harum, vitae iure nobis nam eaque! Necessitatibus, repellendus sequi?
                 </p>
+
+                <h2 id="listTitle" class="articleTitle">Så här skaffar du en fil att printa</h2>
+                <ul id="files">
+                    <li class="fileList">
+                        <h3 class="smallArticleTitle">Fusion 360</h3>
+                        <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestias impedit nemo reprehenderit voluptatum consectetur soluta dolores delectus odit tenetur laboriosam laudantium nihil, rem reiciendis aspernatur excepturi ipsum enim ex quaerat nulla optio corporis a voluptatem minus? Sed quaerat iste laudantium. Tenetur suscipit itaque molestias nihil, doloremque rerum quis ducimus!</p>
+                    </li>
+                    <li class="fileList">
+                        <h3 class="smallArticleTitle">Thingiverse</h3>
+                        <p class="articleText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam minus dolorum, omnis facere magnam laudantium eos vel tempore neque assumenda deleniti, expedita nulla non. Commodi optio, laboriosam molestias nulla libero consequuntur fugit et ipsum, facere tempore aspernatur reprehenderit cumque explicabo nemo deserunt laborum asperiores eveniet labore modi soluta pariatur?</p>
+                    </li>
+                    <li class="fileList">
+                        <h3 class="smallArticleTitle">Printables</h3>
+                        <p class="articleText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eum ex, voluptatibus distinctio deserunt ratione nobis hic modi blanditiis temporibus dolorem quisquam! Atque, voluptatem dolorem? Hic ut esse nisi, veniam id repellat ipsum! Amet enim sit ipsa cupiditate repellat cum deserunt debitis fugiat quasi! Officia, expedita! Commodi voluptas fuga laborum!</p>
+                    </li>
+                </ul>
             </article>
 
             <article id="printerArticle">
                 <div id="prusa">
-                    <h2 class="text" id="articleTitle">
+                    <h2 class="articleTitle">
                         Prusa MK4S
                     </h2>
-                    <p class="text" id="articleText">
+                    <p class="articleText">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi expedita ipsum deserunt, harum autem et quas
                         ad voluptatibus, sit eveniet facilis explicabo, suscipit sint non debitis corporis vero? Molestiae
                         repudiandae nulla possimus culpa pariatur voluptates sed accusantium laudantium sint tempore qui ea
@@ -97,10 +113,10 @@
                 </div>
             
                 <div id="bambu">
-                    <h2 class="text" id="articleTitle">
+                    <h2 class="articleTitle">
                         BambuLab X1C
                     </h2>
-                    <p class="text" id="articleText">
+                    <p class="articleText">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi expedita ipsum deserunt, harum autem et quas
                         ad
                         voluptatibus, sit eveniet facilis explicabo, suscipit sint non debitis corporis vero? Molestiae repudiandae
@@ -111,10 +127,10 @@
                 </div>
             
                 <div id="formlabs">
-                    <h2 class="text" id="articleTitle">
+                    <h2 class="articleTitle">
                         Formlabs Form 2
                     </h2>
-                    <p class="text" id="articleText">
+                    <p class="articleText">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi expedita ipsum deserunt, harum autem et quas
                         ad
                         voluptatibus, sit eveniet facilis explicabo, suscipit sint non debitis corporis vero? Molestiae repudiandae

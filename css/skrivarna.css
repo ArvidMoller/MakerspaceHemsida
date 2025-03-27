@@ -188,16 +188,33 @@
         grid-area: article2;
     }
 
-    #articleTitle {
+    .articleTitle {
         text-align: center;
         font-size: 7vw;
         padding-bottom: 1vh;
+        color: #222222;
     }
 
-    #articleText {
+    .articleText {
         text-align: center;
         font-size: 4vw;
         padding: 1vh;
+        color: #222222;
+    }
+
+    .smallArticleTitle{
+        text-align: center;
+        font-size: 5vw;
+        padding: 1vh;
+        color: #222222;
+    }
+
+    #files{
+        margin-left: -40px;
+    }
+
+    .fileList{
+        list-style-type: none;
     }
 
     #articleFooterDiv {
@@ -344,6 +361,7 @@
         margin-bottom: 5vh;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 2vh;
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -354,11 +372,13 @@
 
     .cardTitle {
         text-align: center;
+        color: #222222;
     }
 
     .cardText {
         text-align: center;
         padding: 1vh;
+        color: #222222;
     }
 
     article {
@@ -366,16 +386,29 @@
         background-color: #f0f0f0;
     }
 
-    #articleTitle {
+    .articleTitle {
         text-align: center;
         font-size: 3vw;
         padding: 3vh;
+        color: #222222;
     }
 
-    #articleText {
+    .articleText {
         text-align: center;
         font-size: 2vw;
         padding: 1vh;
+        color: #222222;
+    }
+
+    #listTitle{
+        padding: 0.75vh;
+        padding-top: 1.5vh;
+    }
+
+    .smallArticleTitle{
+        font-size: 2.5vw;
+        padding: 1vh;
+        color: #222222;
     }
 
     #printerArticle{
