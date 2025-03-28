@@ -145,6 +145,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 5vh;
         border-radius: 1vh;
+        text-decoration: none;
         cursor: pointer;
     }
 
@@ -156,12 +157,13 @@
     .cardTitle {
         text-align: center;
         font-size: 3.5vw;
+        color: #222222;
     }
 
     .cardText {
         text-align: center;
         color: #222222;
-        padding: 1vh;
+        padding: 0.5vh;
         font-size: 3vw;
     }
 
@@ -234,7 +236,7 @@
         padding: 1vh;
     }
 
-    #footerText {
+    .footerText {
         color: #f0f0f0;
         text-align: center;
         font-size: 3vw;
@@ -427,7 +429,7 @@
         padding: 1vh;
     }
 
-    #footerText {
+    .footerText {
         color: #f0f0f0;
         text-align: center;
         padding: 1vh;

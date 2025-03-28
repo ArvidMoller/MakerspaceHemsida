@@ -213,7 +213,7 @@
         padding: 1vh;
     }
 
-    #footerText{
+    .footerText{
         color: #f0f0f0;
         text-align: center;
         font-size: 3vw;
@@ -411,7 +411,7 @@
         padding: 1vh;
     }
 
-    #footerText {
+    .footerText {
         color: #f0f0f0;
         text-align: center;
         padding: 1vh;
