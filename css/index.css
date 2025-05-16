@@ -12,213 +12,211 @@
     color: #222222;
 }
 
-@media screen and (max-width: 767px) {      /* For mobile */
-    body{
-        display: grid;
-        height: 100vh;
-        width: 100%;
-        grid-template-rows: 15vh min-content 85vh auto 5vh auto;
-        grid-template-areas:
-        'hd'
-        'nav'
-        'hero_img'
-        'mn'
-        'div2'
-        'ft';
-    }
+body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 15vh min-content 85vh auto 5vh auto;
+    grid-template-areas:
+    'hd'
+    'nav'
+    'hero_img'
+    'mn'
+    'div2'
+    'ft';
+}
 
-    header{
-        grid-area: hd;
-        background-color: #f0f0f0;
+header{
+    grid-area: hd;
+    background-color: #f0f0f0;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
-    #logo {
-        height: 15vh;
-        display: flex;
-    }
+#logo {
+    height: 15vh;
+    display: flex;
+}
 
-    #headerTitle{
-        font-size: 9vw;
-    }
+#headerTitle{
+    font-size: 9vw;
+}
 
-    #desktopNav{
-        display: none;
-    }
+#desktopNav{
+    display: none;
+}
 
-    #mobileNav{
-        grid-area: nav;
-        background-color: #f0f0f0;
-        
+#mobileNav{
+    grid-area: nav;
+    background-color: #f0f0f0;
     
-        justify-content: space-around;
-        align-items: center;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobileNavLinks{
+    color: black;
+    text-decoration: none;
+    font-size: 4vw;
+
+    transition: all 0.2s ease;
+    }
+    
+    .mobileNavLinks:hover {
+        color: rgb(88, 72, 56);
     }
 
-    .mobileNavLinks{
-        color: black;
-        text-decoration: none;
-        font-size: 4vw;
+#hamburgerButton {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 5%;
+}
 
-        transition: all 0.2s ease;
-        }
-        
-        .mobileNavLinks:hover {
-            color: rgb(88, 72, 56);
-        }
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
 
-    #hamburgerButton {
-        display: inline-block;
-        cursor: pointer;
-        padding-right: 5%;
-    }
+#heroImg {
+    display: flex;
+    grid-area: hero_img;
+    background-image: url(../media/hero/main_room.jpg);
+    background-size: cover;
+    background-position: center;
 
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    #heroImg {
-        display: flex;
-        grid-area: hero_img;
-        background-image: url(../media/hero/main_room.jpg);
-        background-size: cover;
-        background-position: center;
+#figcaption {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 7vw;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
 
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+main{
+    grid-area: mn;
 
-    #figcaption {
-        background-color: #f0f0f0;
-        text-align: center;
-        font-size: 7vw;
-        padding: 0.5em;
-        border-radius: 0.7em;
-    }
+    display: grid;
+    grid-template-rows: auto 10vh auto;
+    grid-template-areas: 
+    'aside'
+    'div'
+    'article';   
+}
 
-    main{
-        grid-area: mn;
+aside {
+    grid-area: aside;
+    background-image: linear-gradient(#0de1ec, #4b0082);
+    text-align: center;
+}
 
-        display: grid;
-        grid-template-rows: auto 10vh auto;
-        grid-template-areas: 
-        'aside'
-        'div'
-        'article';   
-    }
+#cardHeader {
+    padding: 3vh;
+    font-size: 7vw;
+}
 
-    aside {
-        grid-area: aside;
-        background-image: linear-gradient(#0de1ec, #4b0082);
-        text-align: center;
-    }
+#cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    #cardHeader {
-        padding: 3vh;
-        font-size: 7vw;
-    }
+.card {
+    background-color: #dd0890;
+    width: 30%;
+    height: 67vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5vh;
+    border-radius: 1vh;
+}
 
-    #cardContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
+.cardImg {
+    width: 100%;
+    border-radius: 1vh 1vh 0vh 0vh;
+}
 
-    .card {
-        background-color: #dd0890;
-        width: 30%;
-        height: 67vw;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 5vh;
-        border-radius: 1vh;
-    }
+.cardTitle {
+    text-align: center;
+    font-size: 3.5vw;
+}
 
-    .cardImg {
-        width: 100%;
-        border-radius: 1vh 1vh 0vh 0vh;
-    }
+.cardText {
+    text-align: center;
+    color: #222222;
+    padding: 1vh;
+    font-size: 3vw;
+}
 
-    .cardTitle {
-        text-align: center;
-        font-size: 3.5vw;
-    }
+#asideArticleDiv{
+    grid-area: div;
+    background-image: linear-gradient(#4b0082, #f0f0f0);
+}
 
-    .cardText {
-        text-align: center;
-        color: #222222;
-        padding: 1vh;
-        font-size: 3vw;
-    }
+article{
+    grid-area: article;
+    background-color: #f0f0f0;        
+}
 
-    #asideArticleDiv{
-        grid-area: div;
-        background-image: linear-gradient(#4b0082, #f0f0f0);
-    }
+.articleTitle{
+    text-align: center;
+    font-size: 7vw;
+    padding-bottom: 1vh;
+    color: #222222;
+}
 
-    article{
-        grid-area: article;
-        background-color: #f0f0f0;        
-    }
+.articleText{
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vh;
+    color: #222222;
+}
 
-    .articleTitle{
-        text-align: center;
-        font-size: 7vw;
-        padding-bottom: 1vh;
-        color: #222222;
-    }
+.projektTitle {
+    text-align: center;
+    font-size: 6vw;
+    padding-bottom: 0.7vw;
+    color: #222222;
+}
 
-    .articleText{
-        text-align: center;
-        font-size: 4vw;
-        padding: 1vh;
-        color: #222222;
-    }
+.exempelProjekt{
+    width: 80%;
+    padding: 3% 10% 5% 10%;
+}
 
-    .projektTitle {
-        text-align: center;
-        font-size: 6vw;
-        padding-bottom: 0.7vw;
-        color: #222222;
-    }
+#articleFooterDiv{
+    grid-area: div2;
+    background-image: linear-gradient(#f0f0f0, #222222);
+}
 
-    .exempelProjekt{
-        width: 80%;
-        padding: 3% 10% 5% 10%;
-    }
+footer{
+    grid-area: ft;
+    background-color: #222222;
+}
 
-    #articleFooterDiv{
-        grid-area: div2;
-        background-image: linear-gradient(#f0f0f0, #222222);
-    }
+#footerTitle{
+    color:#f0f0f0;
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vh;
+}
 
-    footer{
-        grid-area: ft;
-        background-color: #222222;
-    }
-
-    #footerTitle{
-        color:#f0f0f0;
-        text-align: center;
-        font-size: 4vw;
-        padding: 1vh;
-    }
-
-    .footerText{
-        color: #f0f0f0;
-        text-align: center;
-        font-size: 3vw;
-        padding: 1vh;
-    }
+.footerText{
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 3vw;
+    padding: 1vh;
 }
 
 @media screen and (min-width: 768px) {      /* For desktop */
@@ -261,6 +259,10 @@
         display: none;
     }
 
+    #hamburgerButton{
+        display: none;
+    }
+
     nav{
         grid-area: nav;
 
@@ -272,9 +274,15 @@
         background-color: #f0f0f0;
     }
 
+    #desktopNav{
+        display: inline-block;
+        padding-right: 1vw;
+    }
+
     .desktopNavLinks {
         text-decoration: none;
-        font-size: 2.5vw;
+        font-size: 2vw;
+        padding: 1vh;
         color: black;
 
         transition: all 0.2s ease;
@@ -334,6 +342,7 @@
     .card{
         background-color: #dd0890;
         width: 85%;
+        height: auto;
         margin-bottom: 5vh;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 2vh;
@@ -346,11 +355,13 @@
 
     .cardTitle{
         text-align: center;
+        font-size: 2vw;
     }
 
     .cardText{
         text-align: center;
         padding: 1vh;
+        font-size: 1.5vw;
     }
 
     article{
@@ -365,9 +376,9 @@
         color: #222222;
     }
 
-    #articleText {
+    .articleText {
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.5vw;
         padding: 1vh;
         color: #222222;
     }
@@ -408,12 +419,14 @@
     #footerTitle {
         color: #f0f0f0;
         text-align: center;
+        font-size: 2vw;
         padding: 1vh;
     }
 
     .footerText {
         color: #f0f0f0;
         text-align: center;
+        font-size: 1vw;
         padding: 1vh;
     }
 }

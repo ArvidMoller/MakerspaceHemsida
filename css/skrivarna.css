@@ -12,237 +12,239 @@
     color: #222222;
 }
 
-@media screen and (max-width: 767px) {      /* For mobile */
-    body {
-        display: grid;
-        height: 100vh;
-        width: 100%;
-        grid-template-rows: 15vh min-content 85vh auto 5vh auto;
-        grid-template-areas:
+/* For mobile */
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-rows: 15vh min-content 85vh auto 5vh auto;
+    grid-template-areas:
         'hd'
         'nav'
         'hero_img'
         'mn'
         'div2'
         'ft';
-    }
+}
 
-    header {
-        grid-area: hd;
-        background-color: #f0f0f0;
+header {
+    grid-area: hd;
+    background-color: #f0f0f0;
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
 
-    #logo {
-        height: 15vh;
-        display: flex;
-    }
+#logo {
+    height: 15vh;
+    display: flex;
+}
 
-    #headerTitle {
-        font-size: 9vw;
-    }
+#headerTitle {
+    font-size: 9vw;
+}
 
-    #desktopNav {
-        display: none;
-    }
+#desktopNav {
+    display: none;
+}
 
-    #mobileNav {
-        grid-area: nav;
-        background-color: #f0f0f0;
+#mobileNav {
+    grid-area: nav;
+    background-color: #f0f0f0;
 
 
-        justify-content: space-around;
-        align-items: center;
-    }
+    justify-content: space-around;
+    align-items: center;
+}
 
-    .mobileNavLinks {
-        color: black;
-        text-decoration: none;
-        font-size: 4vw;
+.mobileNavLinks {
+    color: black;
+    text-decoration: none;
+    font-size: 4vw;
 
-        transition: all 0.2s ease;
-    }
+    transition: all 0.2s ease;
+}
 
-    .mobileNavLinks:hover {
-        color: rgb(88, 72, 56);
-    }
+.mobileNavLinks:hover {
+    color: rgb(88, 72, 56);
+}
 
-    #hamburgerButton {
-        display: inline-block;
-        cursor: pointer;
-        padding-right: 5%;
-    }
+#hamburgerButton {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 5%;
+}
 
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
 
-    #heroImg{
-        display: flex;
-        grid-area: hero_img;
-        background-image: url(../media/hero/printer.jpg);
-        background-size: cover;
-        background-position: center;
+#heroImg {
+    display: flex;
+    grid-area: hero_img;
+    background-image: url(../media/hero/printer.jpg);
+    background-size: cover;
+    background-position: center;
 
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-    #figcaption{
-        background-color: #f0f0f0;
-        text-align: center;
-        font-size: 7vw;  
-        padding: 0.5em;
-        border-radius: 0.7em;
-    }
+#figcaption {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 7vw;
+    padding: 0.5em;
+    border-radius: 0.7em;
+}
 
-    main {
-        grid-area: mn;
+main {
+    grid-area: mn;
 
-        display: grid;
-        grid-template-rows: auto 10vh min-content auto;
-        grid-template-areas:
+    display: grid;
+    grid-template-rows: auto 10vh min-content auto;
+    grid-template-areas:
         'aside'
         'div'
         'article';
-    }
+}
 
-    aside {
-        grid-area: aside;
-        background-image: linear-gradient(#0de1ec, #4b0082);
-        text-align: center;
-    }
+aside {
+    grid-area: aside;
+    background-image: linear-gradient(#0de1ec, #4b0082);
+    text-align: center;
+}
 
-    #cardHeader {
-        font-size: 7vw;
-    }
+#cardHeader {
+    font-size: 7vw;
+}
 
-    #cardUnderrubrik{
-        padding-bottom: 3vh;
-        font-size: 4vw;
-    }
+#cardUnderrubrik {
+    padding-bottom: 3vh;
+    font-size: 4vw;
+}
 
-    #cardContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
+#cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    .card {
-        background-color: #dd0890;
-        width: 30%;
-        height: 75vw;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 5vh;
-        border-radius: 1vh;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.card {
+    background-color: #dd0890;
+    width: 30%;
+    height: 75vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5vh;
+    border-radius: 1vh;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .cardImg {
-        width: 100%;
-        border-radius: 1vh 1vh 0vh 0vh;
-    }
+.cardImg {
+    width: 100%;
+    border-radius: 1vh 1vh 0vh 0vh;
+}
 
-    .cardTitle {
-        text-align: center;
-        font-size: 3.5vw;
-        color: #222222;
-    }
+.cardTitle {
+    text-align: center;
+    font-size: 3.5vw;
+    color: #222222;
+}
 
-    .cardText {
-        text-align: center;
-        color: #222222;
-        padding: 0.5vh;
-        font-size: 3vw;
-    }
+.cardText {
+    text-align: center;
+    color: #222222;
+    padding: 0.5vh;
+    font-size: 3vw;
+}
 
-    #asideArticleDiv {
-        grid-area: div;
-        background-image: linear-gradient(#4b0082, #f0f0f0);
-    }
+#asideArticleDiv {
+    grid-area: div;
+    background-image: linear-gradient(#4b0082, #f0f0f0);
+}
 
-    article {
-        grid-area: article;
-        background-color: #f0f0f0;
+article {
+    grid-area: article;
+    background-color: #f0f0f0;
 
-        display: grid;
-        grid-template-areas: 
+    display: grid;
+    grid-template-areas:
         'article1'
         'article2';
-    }
-
-    #printerArticle{
-        grid-area: article1;
-    }
-
-    #article{
-        grid-area: article2;
-    }
-
-    .articleTitle {
-        text-align: center;
-        font-size: 7vw;
-        padding-bottom: 1vh;
-        color: #222222;
-    }
-
-    .articleText {
-        text-align: center;
-        font-size: 4vw;
-        padding: 1vh;
-        color: #222222;
-    }
-
-    .smallArticleTitle{
-        text-align: center;
-        font-size: 5vw;
-        padding: 1vh;
-        color: #222222;
-    }
-
-    #files{
-        margin-left: -40px;
-    }
-
-    .fileList{
-        list-style-type: none;
-    }
-
-    #articleFooterDiv {
-        grid-area: div2;
-        background-image: linear-gradient(#f0f0f0, #222222);
-    }
-
-    footer {
-        grid-area: ft;
-        background-color: #222222;
-    }
-
-    #footerTitle {
-        color: #f0f0f0;
-        text-align: center;
-        font-size: 4vw;
-        padding: 1vh;
-    }
-
-    .footerText {
-        color: #f0f0f0;
-        text-align: center;
-        font-size: 3vw;
-        padding: 1vh;
-    }
 }
+
+#printerArticle {
+    grid-area: article1;
+}
+
+#article {
+    grid-area: article2;
+}
+
+.articleTitle {
+    text-align: center;
+    font-size: 7vw;
+    padding-bottom: 1vh;
+    color: #222222;
+}
+
+.articleText {
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vh;
+    color: #222222;
+}
+
+.smallArticleTitle {
+    text-align: center;
+    font-size: 5vw;
+    padding: 1vh;
+    color: #222222;
+}
+
+#files {
+    margin-left: -40px;
+}
+
+.fileList {
+    list-style-type: none;
+}
+
+#articleFooterDiv {
+    grid-area: div2;
+    background-image: linear-gradient(#f0f0f0, #222222);
+}
+
+footer {
+    grid-area: ft;
+    background-color: #222222;
+}
+
+#footerTitle {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 4vw;
+    padding: 1vh;
+}
+
+.footerText {
+    color: #f0f0f0;
+    text-align: center;
+    font-size: 3vw;
+    padding: 1vh;
+}
+
 
 @media screen and (min-width: 768px) {      /* For desktop */
     body {
@@ -284,6 +286,10 @@
         display: none;
     }
 
+    #hamburgerButton{
+        display: none;
+    }
+
     nav {
         grid-area: nav;
 
@@ -295,9 +301,14 @@
         background-color: #f0f0f0;
     }
 
+    #desktopNav{
+        display: inline-block;
+    }
+
     .desktopNavLinks {
         text-decoration: none;
-        font-size: 2.5vw;
+        font-size: 2vw;
+        padding: 1vh;
         color: black;
 
         transition: all 0.2s ease;
@@ -329,11 +340,10 @@
 
     main {
         grid-area: mn;
-
         display: grid;
         grid-template-columns: 25% 75%;
-        grid-template-areas:
-        'aside article';
+        grid-template-rows: auto;
+        grid-template-areas: 'aside article';
     }
 
     aside {
@@ -360,6 +370,7 @@
     .card {
         background-color: #dd0890;
         width: 85%;
+        height: auto;
         margin-bottom: 5vh;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 2vh;
@@ -375,15 +386,22 @@
     .cardTitle {
         text-align: center;
         color: #222222;
+        font-size: 2vw;
     }
 
     .cardText {
         text-align: center;
         padding: 1vh;
+        font-size: 1.5vw;
         color: #222222;
     }
 
+    #asideArticleDiv {
+        display: none;
+    }
+
     article {
+        display: block;
         grid-area: article;
         background-color: #f0f0f0;
     }
@@ -399,23 +417,32 @@
         text-align: center;
         font-size: 2vw;
         padding: 1vh;
+        padding-bottom: 10vh;
         color: #222222;
     }
 
-    #listTitle{
+    #listTitle {
         padding: 0.75vh;
         padding-top: 1.5vh;
     }
 
-    .smallArticleTitle{
+    .smallArticleTitle {
         font-size: 2.5vw;
         padding: 1vh;
         color: #222222;
     }
 
-    #printerArticle{
+    #printerArticleContainer {
         grid-area: article;
         background-color: #f0f0f0;
+    }
+
+    .printerArticle{
+        padding-bottom: 1vh;
+    }
+
+    #articleFooterDiv{
+        display: none;
     }
 
     footer {
@@ -426,12 +453,14 @@
     #footerTitle {
         color: #f0f0f0;
         text-align: center;
+        font-size: 2vw;
         padding: 1vh;
     }
 
     .footerText {
         color: #f0f0f0;
         text-align: center;
+        font-size: 1vw;
         padding: 1vh;
     }
 }
