@@ -232,7 +232,6 @@ footer{
 
     header{
         grid-area: hd;
-        background-color: #f0f0f0;
 
         display: grid;
         grid-template-columns: 15vh auto auto;
@@ -243,7 +242,6 @@ footer{
 
     #logo {
         grid-area: logo;
-        height: 15vh;
     }
 
     #headerTitle{
@@ -297,19 +295,10 @@ footer{
         grid-area: hero_img;
         background-image: url(../media/hero/main_room.jpg);
         background-size:120%;
-        background-position: center;
-
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     #figcaption {
-        background-color: #f0f0f0;
-        text-align: center;
         font-size: 5vw;
-        padding: 0.5em;
-        border-radius: 0.7em;
     }
 
     main{
@@ -325,22 +314,18 @@ footer{
     aside{
         grid-area: aside;
         background-image: linear-gradient(to right, #0de1ec, #f0f0f0);
-        text-align: center;
     }
 
     #cardHeader{
-        padding: 3vh;
         font-size: 3vw;
     }
 
     #cardContainer{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .card{
-        background-color: #dd0890;
         width: 85%;
         height: auto;
         margin-bottom: 5vh;
@@ -349,38 +334,28 @@ footer{
     }
 
     .cardImg{
-        width: 100%;
         border-radius: 2vh 2vh 0vh 0vh;
     }
 
     .cardTitle{
-        text-align: center;
         font-size: 2vw;
     }
 
     .cardText{
-        text-align: center;
-        padding: 1vh;
         font-size: 1.5vw;
     }
 
     article{
         grid-area: article;
-        background-color: #f0f0f0;
     }
 
     .articleTitle {
-        text-align: center;
         font-size: 3vw;
         padding: 3vh;
-        color: #222222;
     }
 
     .articleText {
-        text-align: center;
         font-size: 1.5vw;
-        padding: 1vh;
-        color: #222222;
     }
 
     #projektContainer{
@@ -389,10 +364,8 @@ footer{
     }
 
     .projektTitle {
-        text-align: center;
         font-size: 3vw;
         padding-bottom: 2vh;
-        color: #222222;
     }
 
     .projekt{
@@ -413,20 +386,13 @@ footer{
 
     footer{
         grid-area: ft;
-        background-color: #222222;
     }
 
     #footerTitle {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 2vw;
-        padding: 1vh;
     }
 
     .footerText {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 1vw;
-        padding: 1vh;
     }
 }

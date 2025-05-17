@@ -19,11 +19,11 @@ body {
     width: 100%;
     grid-template-rows: 15vh min-content 85vh auto auto;
     grid-template-areas:
-        'hd'
-        'nav'
-        'hero_img'
-        'mn'
-        'ft';
+    'hd'
+    'nav'
+    'hero_img'
+    'mn'
+    'ft';
 }
 
 header {
@@ -112,9 +112,9 @@ main {
     display: grid;
     grid-template-rows: auto auto 25vh;
     grid-template-areas:
-        'section'
-        'article'
-        'aside';
+    'section'
+    'article'
+    'aside';
 }
 
 #intro {
@@ -237,22 +237,21 @@ footer {
     body {
         display: grid;
         grid-template-rows: 15vh 85vh auto auto;
-        grid-template-areas:
-            'hd'
-            'hero_img'
-            'mn'
-            'ft';
+    grid-template-areas:
+        'hd'
+        'hero_img'
+        'mn'
+        'ft';
     }
 
     header {
         grid-area: hd;
-        background-color: #f0f0f0;
 
         display: grid;
         grid-template-columns: 15vh auto auto;
         grid-template-rows: 100%;
         grid-template-areas:
-            'Logo hd nav';
+        'Logo hd nav';
     }
 
     #logo {
@@ -311,19 +310,10 @@ footer {
         grid-area: hero_img;
         background-image: url(../media/hero/printer.jpg);
         background-size: 120%;
-        background-position: center;
-
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     #figcaption {
-        background-color: #f0f0f0;
-        text-align: center;
         font-size: 5vw;
-        padding: 0.5em;
-        border-radius: 0.7em;
     }
 
     main {
@@ -333,24 +323,17 @@ footer {
         grid-template-rows: auto auto;
         grid-template-columns: 30% 70%;
         grid-template-areas:
-            'section section'
-            'aside article';
+        'section section'
+        'aside article';
     }
 
     #intro {
         grid-area: section;
     }
 
-    #introTitle {
-        font-size: 3vw;
-        text-align: center;
-        color: #222222;
-    }
-
     #introText {
         font-size: 1.5vw;
         padding: 1vw;
-        color: #222222;
     }
 
     article {
@@ -358,95 +341,39 @@ footer {
         background-image: linear-gradient(#dd0890, #4b0082);
     }
 
-    #articleTitle {
-        text-align: center;
-        font-size: 3.5vw;
-        padding: 1vh;
-    }
-
-    #cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .card {
-        background-color: #f0f0f0;
-        width: 20vw;
-        height: 35vw;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 1vh;
-        margin: 1vh;
-        padding: 2vh;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .cardTitle {
         font-size: 2vw;
-        padding-bottom: 1vh;
-        text-align: center;
-        color: #222222;
     }
 
     .cardText {
         font-size: 1.5vw;
-        color: #222222;
     }
 
     aside {
         grid-area: aside;
         background-image: linear-gradient(#dd0890, #4b0082);
-
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 
     .asideCard {
-        background-color: #f0f0f0;
         width: 85%;
         height: 95%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 1vh;
-        margin: 1vh;
-        padding: 2vh;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .asideCardTitle {
-        font-size: 2.5vw;
-        padding-bottom: 1vh;
-        text-align: center;
-        color: #222222;
     }
 
     .asideCardText {
         font-size: 1.9vw;
-        color: #222222;
     }
 
     footer {
         grid-area: ft;
-        background-color: #222222;
     }
 
     #footerTitle {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 2vw;
         padding: 1vh;
     }
 
     .footerText {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 1vw;
         padding: 1vh;
     }

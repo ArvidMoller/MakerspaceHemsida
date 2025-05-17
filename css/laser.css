@@ -19,12 +19,12 @@ body {
     width: 100%;
     grid-template-rows: 15vh min-content 85vh auto 5vh auto;
     grid-template-areas:
-        'hd'
-        'nav'
-        'hero_img'
-        'mn'
-        'div2'
-        'ft';
+    'hd'
+    'nav'
+    'hero_img'
+    'mn'
+    'div2'
+    'ft';
 }
 
 header {
@@ -113,9 +113,9 @@ main {
     display: grid;
     grid-template-rows: auto 10vh min-content auto;
     grid-template-areas:
-        'article'
-        'div'
-        'aside';
+    'article'
+    'div'
+    'aside';
 }
 
 article {
@@ -215,26 +215,24 @@ footer {
         display: grid;
         grid-template-rows: 15vh 85vh auto auto;
         grid-template-areas:
-            'hd'
-            'hero_img'
-            'mn'
-            'ft';
+        'hd'
+        'hero_img'
+        'mn'
+        'ft';
     }
 
     header {
         grid-area: hd;
-        background-color: #f0f0f0;
 
         display: grid;
         grid-template-columns: 15vh auto auto;
         grid-template-rows: 100%;
         grid-template-areas:
-            'Logo hd nav';
+        'Logo hd nav';
     }
 
     #logo {
         grid-area: logo;
-        height: 15vh;
     }
 
     #headerTitle {
@@ -288,19 +286,10 @@ footer {
         grid-area: hero_img;
         background-image: url(../media/hero/laser.jpg);
         background-size: 120%;
-        background-position: center;
-
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     #figcaption {
-        background-color: #f0f0f0;
-        text-align: center;
         font-size: 5vw;
-        padding: 0.5em;
-        border-radius: 0.7em;
     }
 
     main {
@@ -310,8 +299,8 @@ footer {
         grid-template-rows: auto auto;
         grid-template-columns: 30% 70%;
         grid-template-areas:
-            'aside article'
-            'aside article';
+        'aside article'
+        'aside article';
     }
 
     article {
@@ -320,31 +309,22 @@ footer {
     }
 
     #articleTitle {
-        text-align: center;
         font-size: 3vw;
-        padding: 1vh;
     }
 
     #cardContainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
     }
 
     .card {
-        background-color: #f0f0f0;
         width: 250px;
         height: 350px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 1vh;
         margin: 1vh;
         padding: 2vh;
-        cursor: pointer;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .cardTitle {
@@ -364,7 +344,6 @@ footer {
 
     aside {
         grid-area: aside;
-        background-color: #f0f0f0;
     }
 
     .asideList {
@@ -378,7 +357,6 @@ footer {
     }
 
     .asideText {
-        color: #222222;
         font-size: 2vw;
         padding: 1vh;
     }
@@ -390,20 +368,13 @@ footer {
 
     footer {
         grid-area: ft;
-        background-color: #222222;
     }
 
     #footerTitle {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 2vw;
-        padding: 1vh;
     }
 
     .footerText {
-        color: #f0f0f0;
-        text-align: center;
         font-size: 1vw;
-        padding: 1vh;
     }
 }
